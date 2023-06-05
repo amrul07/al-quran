@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* CARDHOME */
+.gridContainer {
+  display: grid;
+  background-color: blue;
+}
+
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin: auto;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  margin: auto;
+}
