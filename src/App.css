@@ -1,7 +1,22 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
 .App {
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
-
+/* .css-wk4o34-MuiTypography-root {
+  font-family: "Poppins", sans-serif !important;
+} */
+p {
+  font-family: "Poppins", sans-serif !important;
+}
+.MuiTypography-root {
+  font-family: "Poppins", sans-serif !important;
+}
+.MuiTextField-root {
+  font-family: "Poppins", sans-serif !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -22,6 +37,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .App-link {
@@ -36,8 +52,6 @@
     transform: rotate(360deg);
   }
 }
-
-
 
 /* CARDHOME */
 .gridContainer {
@@ -56,10 +70,12 @@
   grid-column: 1;
   grid-row: 1 / span 2;
   margin: auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .item2 {
   grid-column: 3;
   grid-row: 1 / span 2;
   margin: auto;
+  font-family: "Poppins", sans-serif;
 }

@@ -14,11 +14,11 @@ const CardSurah = (props) => {
           // },
           alignItems: "center",
         }}
-        style={{ width: "85%" }}
+        style={{ width: "85%",}}
         key={props.key}
       >
         <Box display={"flex"} justifyContent={"space-between"}>
-          <Typography fontStyle="italic" >{`${props.surah} : ${props.nomor}`}</Typography>
+          <Typography  fontStyle="italic" >{`${props.surah} : ${props.nomor}`}</Typography>
           <Typography textAlign="end" maxWidth="90%" variant="h5" fontWeight="bold">{props.ar}</Typography>
         </Box>
         <Box  display={"flex"} justifyContent={"space-between"}>

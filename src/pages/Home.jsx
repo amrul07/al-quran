@@ -61,7 +61,7 @@ const Home = () => {
       >
         <TextField
           fullWidth
-          sx={{ marginTop: "20px", margin: " center", backgroundColor: "white"}}
+          sx={{ marginTop: "20px", margin: " center", backgroundColor: "white",fontFamily: "Poppins"}}
           onChange={handleSearch}
           label="Ketik nama surah..."
           variant="outlined"

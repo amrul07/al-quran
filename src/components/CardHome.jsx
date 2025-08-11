@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box, CardActionArea, Grid, Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 // import "./CardHome.module.css";
 // import "./CardHome.module.css";
 
@@ -22,8 +22,9 @@ const CardHome = (props) => {
     //   //   justifyContent="center"
     //   //   key={props.key}
     // >
-    
-    <Card 
+
+    <Card
+      onClick={() => navigate(`/surah/${props.nomor}`)}
       className="t"
       sx={{
         margin: "16px",
@@ -35,10 +36,10 @@ const CardHome = (props) => {
         maxWidth: "90%",
         minWidth: "80%",
         alignItems: "center",
+        cursor: "pointer",
         // minHeight: "300px"
       }}
       key={props.key}
-      
     >
       <div>{props.nomor}.</div>
       <div
@@ -49,19 +50,24 @@ const CardHome = (props) => {
           textAlign: "start",
         }}
       >
-        <Typography style={{fontWeight: "bold"}} onClick={() => navigate(`/surah/${props.nomor}`)}>{`${props.nama_latin} (${props.jumlah_ayat})`}</Typography>
+        <Typography
+          style={{ fontWeight: "bold" }}
+        >{`${props.nama_latin} (${props.jumlah_ayat})`}</Typography>
         <Typography>{props.arti}</Typography>
       </div>
-      <div className="div-tiga" style={{ flexGrow: "5", textAlign: "right", fontWeight: "bold" }}>
-        {props.nama} <Button style={{ textTransform: "none"}} variant="contained" color="success" onClick={props.hapus}>
+      <div
+        className="div-tiga"
+        style={{ flexGrow: "5", textAlign: "right", fontWeight: "bold" }}
+      >
+        {props.nama}
+        {/* <Button style={{ textTransform: "none"}} variant="contained" color="success" onClick={props.hapus}>
         Delete
-      </Button>
+      </Button> */}
       </div>
       {/* <button onClick={props.hapus}>delete</button> */}
-      
+
       {/* <button onClick={() => navigate(`fav/${props.nomor}`)}>favorite</button> */}
     </Card>
-
   );
 };
 
